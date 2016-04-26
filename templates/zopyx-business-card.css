@@ -50,6 +50,6 @@ body{
     -ro-editable: false;
 }
 
-.unprotected {
+*[editable="yes"] {
     -ro-editable-inside: true;
 }

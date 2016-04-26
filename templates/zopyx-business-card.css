@@ -1,57 +1,55 @@
-        <style type="text/css">
-            @page {
-                -ro-id: default-page-properties;
-                size: 54mm 85.6mm;
-                margin: 0cm;
-            }
-            
-            body{
-                font-family: DroidSans;
-                font-size: 9pt;
-                margin: 0;
-                line-height: 1.1em;
-            }
+@page {
+    -ro-id: default-page-properties;
+    size: 54mm 85.6mm;
+    margin: 0cm;
+}
 
-            #logo {
-                position: absolute;
-                top: 2.0cm;
-                left: 0.5cm;
-                width: 3cm;
-                height: 1.5cm;
-            }
+body{
+    font-family: DroidSans;
+    font-size: 9pt;
+    margin: 0;
+    line-height: 1.1em;
+}
 
-            #logo img {
-                width: 3cm;
-            }
+#logo {
+    position: absolute;
+    top: 2.0cm;
+    left: 0.5cm;
+    width: 3cm;
+    height: 1.5cm;
+}
 
-            #header {
-                position: absolute;
-                top: 0.5cm;
-                left: 1cm;
-                font-size: 9px;
-            }
+#logo img {
+    width: 3cm;
+}
 
-            #personal-data {
-                position: absolute;
-                top: 4cm;
-                left: 1cm;
-                font-size: 9px;
-            }
+#header {
+    position: absolute;
+    top: 0.5cm;
+    left: 1cm;
+    font-size: 9px;
+}
 
-            #street,
-            #mail {
-                margin-top: 0.5cm;
-            }
+#personal-data {
+    position: absolute;
+    top: 4cm;
+    left: 1cm;
+    font-size: 9px;
+}
 
-            #name {
-                color: blue;
-            }
+#street,
+#mail {
+    margin-top: 0.5cm;
+}
 
-            .protected {
-                -ro-editable: false;
-            }
-            
-            .unprotected {
-                -ro-editable-inside: true;
-            }
-        </style>
+#name {
+    color: blue;
+}
+
+.protected {
+    -ro-editable: false;
+}
+
+.unprotected {
+    -ro-editable-inside: true;
+}

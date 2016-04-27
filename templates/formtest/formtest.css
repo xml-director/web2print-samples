@@ -6,8 +6,11 @@
 
 body {
     font-family: DroidSans;
-    font-size: 15pt;
-    margin: 0;
-    line-height: 1.0em;
+    font-size: 24pt;
+    line-height: 2.0em;
+}
+
+.field {
+    margin-bottom: 2em;
 }
 

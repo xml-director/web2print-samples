@@ -2,7 +2,7 @@ import os
 import glob
 import commands
 
-for name in glob.glob('*.html'):
+for name in glob.glob('*/*.html'):
     basename, ext = os.path.splitext(name)
 
     cmd = 'pdfreactor.py -i {} -o {}.pdf'.format(name, basename)

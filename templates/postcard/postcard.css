@@ -1,55 +1,38 @@
 @page {
     -ro-id: default-page-properties;
-    size: 54mm 85.6mm;
+    size: 148mm 105mm;
     margin: 0cm;
 }
 
-body{
+body {
     font-family: DroidSans;
     font-size: 9pt;
     margin: 0;
     line-height: 1.1em;
 }
 
-#logo {
+#front {
+    page-break-after: always;
+}
+
+img#background {
+    height: 100%;
+    width: 100%;
+    postion: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+#text-frontpage {
     position: absolute;
-    top: 2.0cm;
-    left: 0.5cm;
-    width: 3cm;
-    height: 1.5cm;
-}
-
-#logo img {
-    width: 3cm;
-}
-
-#header {
-    position: absolute;
-    top: 0.5cm;
-    left: 1cm;
-    font-size: 9px;
-}
-
-#personal-data {
-    position: absolute;
-    top: 4cm;
-    left: 1cm;
-    font-size: 9px;
-}
-
-#street,
-#mail {
-    margin-top: 0.5cm;
-}
-
-#name {
-    color: blue;
-}
-
-.protected {
-    -ro-editable: false;
-}
-
-*[editable="yes"] {
-    -ro-editable-inside: true;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 3cm;
+    color: yellow;
+    font-size: 1.5em;
+    line-height: 1.5em;
 }

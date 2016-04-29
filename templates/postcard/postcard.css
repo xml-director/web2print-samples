@@ -16,8 +16,8 @@ body {
 }
 
 img#background {
-    height: 100%;
     width: 100%;
+    height: auto;
     postion: absolute;
     top: 0;
     bottom: 0;

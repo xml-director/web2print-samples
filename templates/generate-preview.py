@@ -9,7 +9,7 @@ for name in glob.glob('*/*.html'):
     cmd = 'pdfreactor.py -i {} -o {}.pdf'.format(name, basename)
     os.system(cmd)
 
-    cmd  = 'convert -density 300 {}.pdf -resize 400 {}.png'.format(basename, basename)
+    cmd  = 'convert -density 300 {}.pdf[0] -resize 400 {}.png'.format(basename, basename)
     os.system(cmd)
 
     cmd  = 'git add {}.png'.format(basename)

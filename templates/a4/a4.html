@@ -3,12 +3,34 @@
         <style type="text/css">
             @page {
                 size: a4;
-                margin: 0;
+                margin: 2cm;
                 background-image: url(a4.pdf);
+            }
+
+            #addr1 {
+                position: absolute;
+                left: 20mm;
+                top: 27mm;
+                height: 5mm;
+                width: 85mm;
+                border: 1px solid red;
+            }
+            #addr2 {
+                position: absolute;
+                left: 20mm;
+                top: 32mm;
+                height: 40mm;
+                width: 85mm;
+                border: 1px solid red;
             }
         </style>
     </head>
     <body>
-        hello world
+        <div id="addr1">
+            Postanschrift des Absenders
+        </div>
+        <div id="addr2">
+            Anschriftfeld
+        </div>
     </body>
 </html>

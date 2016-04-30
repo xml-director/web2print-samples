@@ -3,6 +3,8 @@ $page-height: 105mm;
 $padding-text-box: 5mm;
 $frontpage-text-angle: -20deg;
 
+@import url(https://fonts.googleapis.com/css?family=Just+Another+Hand);
+
 @page {
     -ro-id: default-page-properties;
     size: $page-width $page-height;
@@ -50,6 +52,9 @@ img#background {
     height: $page-height;
     border: 1px solid red;
     padding: 5mm;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-family: 'Just Another Hand', cursive;
 }
 
 #back-address {
@@ -71,3 +76,13 @@ img#background {
     border:3px solid blue;
 }
 
+
+#address-inner {
+    margin-left: 1cm;
+    margin-top: 6cm;
+    font-size: 1.4em;
+}
+
+.address-line {
+    margin-bottom: 1em;
+}

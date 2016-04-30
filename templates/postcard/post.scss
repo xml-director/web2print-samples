@@ -1,0 +1,73 @@
+$page-width: 148mm;
+$page-height: 105mm;
+$padding-text-box: 5mm;
+$frontpage-text-angle: -20deg;
+
+@page {
+    -ro-id: default-page-properties;
+    size: $page-width $page-height;
+    margin: 0;
+}
+
+body {
+    font-family: DroidSans;
+    font-size: 9pt;
+    margin: 0;
+    line-height: 1.1em;
+}
+
+#front {
+    page-break-after: always;
+}
+
+img#background {
+    width: 100%;
+    height: auto;
+    postion: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+#text-frontpage {
+    position: absolute;
+    top: 2cm;
+    bottom: 2cm;
+    left: 2cm;
+    color: yellow;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    transform: rotate($frontpage-text-angle);
+}
+
+#back-text {
+    position: absolute;
+    top: 0cm;
+    left: 0cm;
+    right: $page-width / 2;
+    width: $page-width / 2 - 2 * $padding-text-box;
+    height: $page-height;
+    border: 1px solid red;
+    padding: 5mm;
+}
+
+#back-address {
+    position: absolute;
+    top: 0;
+    left: $page-width / 2;
+    right: $page-width ;
+    width: $page-width / 2;
+    height: $page-height;
+    border: 1px solid blue;
+}
+
+#sep {
+    left: 50%;
+    right: 50%;
+    top: 2cm;
+    bottom: 2cm;
+    width: 5px;
+    border:3px solid blue;
+}
+

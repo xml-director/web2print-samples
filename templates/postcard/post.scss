@@ -3,7 +3,15 @@ $page-height: 105mm;
 $padding-text-box: 5mm;
 $frontpage-text-angle: -20deg;
 
+/*
 @import url(https://fonts.googleapis.com/css?family=Just+Another+Hand);
+*/
+
+@font-face {
+    font-family: "Just Another Hand";
+    src: url("JustAnotherHand.ttf");
+}
+
 
 @page {
     -ro-id: default-page-properties;
@@ -85,4 +93,17 @@ img#background {
 
 .address-line {
     margin-bottom: 1em;
+    max-width: $page-width / 2 - 2cm;
+}
+
+.protected {
+    -ro-editable: false;
+}
+
+*[editable="yes"] {
+    -ro-editable-inside: true;
+}
+
+div[type="text"] {
+    white-space: pre-line;
 }

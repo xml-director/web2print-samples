@@ -1,0 +1,30 @@
+@import url("../styles/a5.css");
+
+h1 {
+    position: running(header1);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+h2 {
+    position: running(header2);
+    font-size: 1em;
+    color: blue;
+}
+
+div.title {
+    font-size: 2em;
+    margin-bottom: 2em;
+    page-break-before: always;
+}
+
+@page{
+
+    @top-left {
+        content: element(header1);
+    }
+
+    @top-right {
+        content: element(header2);
+    }
+}

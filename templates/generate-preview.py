@@ -7,6 +7,7 @@ for name in glob.glob('*/*.html'):
     print basename
 
     cmd = 'pdfreactor.py -i {} -o {}.pdf'.format(name, basename)
+    cmd = 'prince {} {}.pdf'.format(name, basename)
     os.system(cmd)
 
     cmd  = 'convert -density 300 {}.pdf[0] -resize 400 {}.png'.format(basename, basename)

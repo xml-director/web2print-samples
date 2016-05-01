@@ -1,7 +1,7 @@
 @page {
     -ro-id: default-page-properties;
     size: a4
-    margin: 2cm;
+    margin: 0cm;
 }
 
 body{
@@ -13,19 +13,17 @@ body{
 
 #header {
     position: absolute;
-    top: 0.5cm;
-    left: 1cm;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     font-size: 9px;
 }
+
 
 #header {
     text-align: center;
     width: 100%;
-}
-
-#header img {
-    width: 80%;
-    text-align: center;
 }
 
 #preface {

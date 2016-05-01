@@ -67,7 +67,8 @@ img#background {
   font-size: 1.4em; }
 
 .address-line {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  max-width: 54mm; }
 
 .protected {
   -ro-editable: false; }

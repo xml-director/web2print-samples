@@ -86,3 +86,11 @@ img#background {
 .address-line {
     margin-bottom: 1em;
 }
+
+.protected {
+    -ro-editable: false;
+}
+
+*[editable="yes"] {
+    -ro-editable-inside: true;
+}

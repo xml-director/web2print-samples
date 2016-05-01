@@ -103,3 +103,7 @@ img#background {
 *[editable="yes"] {
     -ro-editable-inside: true;
 }
+
+div[type="text"] {
+    white-space: pre-line;
+}

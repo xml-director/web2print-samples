@@ -1,4 +1,6 @@
+/*
 @import url(https://fonts.googleapis.com/css?family=Just+Another+Hand);
+*/
 @font-face {
   font-family: "Just Another Hand";
   src: url("JustAnotherHand.ttf"); }
@@ -78,5 +80,8 @@ img#background {
 
 *[editable="yes"] {
   -ro-editable-inside: true; }
+
+div[type="text"] {
+  white-space: pre-line; }
 
 /*# sourceMappingURL=post.css.map */

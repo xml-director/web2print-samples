@@ -29,7 +29,7 @@ body{
 #preface {
     position: absolute;
     text-align: center;
-    top: 14cm;
+    top: 10cm;
     width: 100%;
 }
 
@@ -50,7 +50,6 @@ body{
 }
 
 #copyright {
-    font-size: 1.0em;
     color: gold;
     text-align: center;
 }
@@ -59,7 +58,8 @@ body{
 #footer {
     position: absolute;
     text-align: center;
-    bottom: 3cm;
+    bottom: 1cm;
+    font-size: 2em;
     width: 100%;
 }
 
